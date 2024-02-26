@@ -1,5 +1,12 @@
-import { PhoneAboutIcon, SupoortAboutIcon } from '../assets/assets';
+import {
+  BookIcon,
+  MoneyIcon,
+  PhoneAboutIcon,
+  SupoortAboutIcon,
+  ThumbsIcon,
+} from '../assets/assets';
 import AboutusCard from '../components/AboutusCard';
+import AccordionItem from '../components/AccordionItem';
 import BottonBanner from '../components/BottomBanner';
 
 const Aboutus = () => {
@@ -18,9 +25,59 @@ const Aboutus = () => {
         </div>
       </div>
 
+      <div className="flex container mx-auto text-center justify-center gap-10 mt-10">
+        <AboutusCard
+          icon={BookIcon}
+          iconWidth={40}
+          title={'General'}
+          subtitle={'All you need to know about Paycrest protocol.'}
+        />
+        <AboutusCard
+          icon={MoneyIcon}
+          iconWidth={40}
+          title={'Providers'}
+          subtitle={
+            'How to tap into a fast-growing market for crypto-to-fiat transactions.'
+          }
+        />
+        <AboutusCard
+          icon={ThumbsIcon}
+          iconWidth={40}
+          title={'Senders'}
+          subtitle={
+            'How to help your customers cash out their crypto into local fiat money.'
+          }
+        />
+      </div>
+
       <h2 className="font-bold text-center pt-[120px] md:pb-[50px] text-[30px] lg:text-[56px]">
         General
       </h2>
+      {/*  */}
+
+      <div className="container mx-auto text-center justify-center gap-10 mt-10">
+        <AccordionItem title="What is Paycrest?">
+          <p>
+            Paycrest is a decentralized peer-to-peer protocol that enables the
+            seamless exchange of cryptocurrencies for local currencies across
+            Ethereum and other EVM-based networks.
+          </p>
+        </AccordionItem>
+        <AccordionItem title="How can you use Paycrest?">
+          <p>Content for section 2 goes here.</p>
+        </AccordionItem>
+        <AccordionItem title="Does Paycrest work for customer or business?">
+          <p>Content for section 3 goes here.</p>
+        </AccordionItem>
+        <AccordionItem title="Does Paycrest power cross-border payments?">
+          <p>Content for section 4 goes here.</p>
+        </AccordionItem>
+        <AccordionItem title="What is Paycrest Direct Charge?">
+          <p>Content for section 5 goes here.</p>
+        </AccordionItem>
+      </div>
+
+      {/*  */}
 
       <div className=" flex flex-col container mx-auto text-center justify-center items-center">
         <h2 className="font-bold text-center text-[30px] lg:text-[56px]">
