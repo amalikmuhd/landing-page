@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mock Social Media Profile</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      /* Add your custom styles here */
+      .profile-section {
+        text-align: center;
+        padding: 20px;
+      }
+      .profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .post {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <img
+          src="profile_picture.jpg"
+          alt="Profile Picture"
+          class="profile-picture"
+        />
+        <h1 class="profile-name">Jessica</h1>
+        <p class="about-section">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+      </div>
+
+      <!-- Posts Section -->
+      <div class="posts-section">
+        <!-- Placeholder post with skeleton loader -->
+        <div class="post" style="display: none">
+          <h3 class="post-title">Loading...</h3>
+
+          <p class="post-body">Loading...</p>
+          <button class="btn btn-primary like-btn">
+            Like <span class="like-count">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap and jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Function to fetch posts from JSONPlaceholder API
+        function fetchPosts() {
+          $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/posts',
+            method: 'GET',
+            success: function (data) {
+              // Display the posts on the page
+              displayPosts(data);
+            },
+            error: function () {
+              console.log('Error fetching posts from API.');
+            },
+          });
+        }
+
+        // Function to display posts on the page
+        function displayPosts(posts) {
+          const postsSection = $('.posts-section');
+          const postTemplate = $('.post').first().clone();
+
+          posts.forEach(function (post) {
+            const postElement = postTemplate.clone();
+
+            postElement.find('.post-title').text(post.title);
+            postElement.find('.post-body').text(post.body);
+            postElement
+              .find('.like-count')
+              .text(Math.floor(Math.random() * 100)); // Random likes count for placeholder
+
+            // Event listener for the like button
+            postElement.find('.like-btn').click(function () {
+              const likeCountElement = $(this).find('.like-count');
+              const currentLikes = parseInt(likeCountElement.text());
+              likeCountElement.text(currentLikes + 1);
+            });
+
+            postsSection.append(postElement);
+          });
+
+          // Show the posts section after loading is complete
+          postsSection.find('.post').fadeIn();
+        }
+
+        // Fetch and display posts on page load
+        fetchPosts();
+      });
+    </script>
+  </body>
+</html>
