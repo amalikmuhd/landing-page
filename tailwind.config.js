@@ -28,6 +28,8 @@ export default {
       'light-dark': '#676873',
       'button-primary': '#1565D8',
       'header-primary': '#0D0C2B',
+      'secondary-color': '#9BBFF0',
+      'font-primary-color': '#202F3A',
     },
     fontFamily: {
       'space-grotesk': ['Space Grotesk', 'sans-serif'],
