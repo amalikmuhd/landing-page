@@ -4,7 +4,7 @@ import Landingpage from './pages/Landingpage';
 const App = () => {
   return (
     <>
-      <div className="bg-bg-color ">
+      <div className="bg-bg-color  ">
         <Landingpage />
         {/* <Legalpage /> */}
       </div>
