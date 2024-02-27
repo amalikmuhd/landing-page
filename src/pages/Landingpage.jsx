@@ -3,6 +3,9 @@ import Card from "../components/Card";
 import CardTwo from "../components/CardTwo";
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar";
+import SendRecieve from "../components/SendRecieve";
+import TextImageCard from "../components/TextImageCard";
+import WhyPayCrest from "../components/WhyPayCrest";
 
 const cardArr = [
   {
@@ -63,9 +66,17 @@ const Landingpage = () => {
           </div>
         </div>
       </Card>
+      <WhyPayCrest />
+      <SendRecieve />
+      {/* <TextImageCard /> */}
       <div className="flex flex-wrap w-[80%] mx-auto justify-between">
         {cardArr.map((items) => (
-          <CardTwo cardBackground={"dark"} cardWidth={"30%"} />
+          <CardTwo
+            text={items.text}
+            titleText={items.titleText}
+            cardBackground={items.cardBackground}
+            cardImage={items.cardImage}
+          />
         ))}
       </div>
 

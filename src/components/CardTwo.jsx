@@ -20,7 +20,7 @@ const CardTwo = ({
       className={
         cardClass
           ? cardClass
-          : `p-4  w-[100%] md:w-[${cardWidth}] lg:w-[${cardWidth}] my-5 rounded-[20px]`
+          : `p-4 lg:p-[10px]  w-[100%] md:w-[45%] lg:w-[30%] my-5 rounded-[20px]`
       }
     >
       <div className="imageContainer my-4 text-center w-[15%] p-[10px] bg-[#FFFFFF] rounded-[50px]">
