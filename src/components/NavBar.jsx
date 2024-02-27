@@ -1,11 +1,9 @@
+import Button from './Button';
+
 const NavBar = () => {
   return (
-    <header
-      className="bg-red font-space-grotesk px-4 w-full font-Open-sans
-    flex justify-between h-14 items-center pt-10
-    "
-    >
-      <div className="flex justify-center lg:block ">
+    <header className="bg-header-primary font-space-grotesk w-full flex justify-between h-20 items-center lg:px-40">
+      <div className="flex justify-center lg:block">
         <svg
           width="210"
           height="44"
@@ -54,6 +52,18 @@ const NavBar = () => {
             fill="white"
           />
         </svg>
+      </div>
+
+      <div className="flex justify-between items-center gap-10">
+        <Button
+          title={'Login'}
+          style="bg-pink-950 text-white font-space-grotesk px-4 w-full font-Open-sans"
+        />
+
+        <Button
+          title={'Get Started'}
+          style="bg-button-primary text-white font-space-grotesk font-Open-sans size-3.5"
+        />
       </div>
     </header>
   );
