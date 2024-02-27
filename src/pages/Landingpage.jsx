@@ -2,6 +2,7 @@ import Card from '../components/Card';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 
+
 const Landingpage = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const Landingpage = () => {
           </div>
         </div>
       </Card>
+      <Solution />
       <Footer />
     </>
   );

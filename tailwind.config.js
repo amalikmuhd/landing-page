@@ -11,6 +11,7 @@ export default {
       'white': '#ffffff',
       'black': '#000000',
       'bg-color': '#C3DCFF',
+      'blue-background': '#0D0C2B',
       'base-russian': '#02061E',
       'mid-russia': '#35384B',
       'light-russia': '#676A78',
