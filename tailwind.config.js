@@ -1,15 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     colors: {
-      'transparent': 'transparent',
-      'current': 'currentColor',
-      'white': '#ffffff',
-      'black': '#000000',
+      transparent: 'transparent',
+      current: 'currentColor',
+      white: '#ffffff',
+      black: '#000000',
       'bg-color': '#C3DCFF',
       'base-russian': '#02061E',
       'mid-russia': '#35384B',
@@ -29,6 +26,10 @@ export default {
       'base-dark': '#010416',
       'mid-dark': '#343645',
       'light-dark': '#676873',
+      'button-primary': '#1565D8',
+      'header-primary': '#0D0C2B',
+      'secondary-color': '#9BBFF0',
+      'font-primary-color': '#202F3A',
     },
     fontFamily: {
       'space-grotesk': ['Space Grotesk', 'sans-serif'],
@@ -36,4 +37,4 @@ export default {
     extend: {},
   },
   plugins: [],
-}
+};

@@ -1,12 +1,31 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Landingpage from './pages/Landingpage';
+import Aboutus from './pages/Aboutus';
+import Legal from './pages/Legal';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import { useEffect } from 'react';
+import ScrollToTop from './utils/ScrollToTop';
 
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
-    <>
-      <div className="bg-bg-color ">
-        <Landingpage />
-      </div>
-    </>
+    <Router>
+      <ScrollToTop />
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<Landingpage />} />
+        <Route exact path="aboutus" element={<Aboutus />} />
+        <Route exact path="/legal" element={<Legal />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 };
 console.log('App.jsx');
