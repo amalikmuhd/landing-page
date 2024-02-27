@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 const Solution = (props) => {
   return (
@@ -7,7 +8,7 @@ const Solution = (props) => {
       <div className = " justify-center  flex ">
         <p className = "text-center font-bold border-0 rounded-full bg-[#9BBFF01A] px-[19px] py-[6px]">{props.main}</p>
       </div>
-        <h1 className = 'font-bold md:text-[36px] text-[24px] py-[24px] justify-center flex lg:leading-[48px]'>{props.sub}</h1>
+        <h1 className = 'font-bold md:text-[36px] text-[24px] py-[24px] justify-center text-center flex lg:leading-[48px]'>{props.sub}</h1>
         <div className = "flex justify-center">
             <p className = "text-[18px] px-auto flex lg:w-[699px] text-center md:pb-0 pb-[60px]">{props.text}</p>
         </div>
@@ -34,6 +35,6 @@ const Solution = (props) => {
       </div>
     </>
   )
-}
+  }
 
 export default Solution

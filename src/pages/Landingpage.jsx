@@ -2,6 +2,7 @@ import Card from '../components/Card';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 import Solution from '../components/Solution';
+import Centric from '../components/centric';
 
 
 const Landingpage = () => {
@@ -29,6 +30,7 @@ const Landingpage = () => {
       <Solution style = {'md:flex-row'} main={'Our Solutions'} sub={'A New Era of Borderless Payments'} text={'Paycrest is ushering in a new era of decentralized payments for Africa that are fast, affordable, and accessible'} margin = {'flex flex-col pb-[64px] pt-[100px]'} Image={"./landing1.png"} card={'For Senders'} title = {'Send Cryptocurrency'} subtitle = {'Convert your cryptocurrencies into local fiat currency and transfer them seamlessly to any bank account or mobile wallet.'} button = {'Start sending now'}/>
       <Solution style = {'md:flex-row-reverse'} Image ={"./landing2.png"} card={'For Liquidity Providers'} title = {'Provide Liquidity'} subtitle = {'Provide liquidity and earn passive income through operating automated liquidity provision nodes'} button = {'Become a provider'}/>
       <Solution style = {'md:flex-row'} Image={"./landing3.png"} card={'For Developers'} title = {'Build on Paycrest Protocol'} subtitle = {'Develop applications and decentralised applications (dApps) leveraging Paycrest Protocol REST APIs or smart contracts'} button = {'Explore developer docs'}/>
+      <Centric style = {'md:flex-row'} Image={"./landing4.png"} card={'For Developers'} title = {'Developer-centric APIs'} subtitle = {'Paycrest facilitates smooth integration of crypto payment services into any application with comprehensive documentation of APIs and SDKs.'} button = {'View Documentation'}/>
       <Footer />
     </>
   );
