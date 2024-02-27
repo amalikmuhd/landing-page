@@ -1,9 +1,9 @@
 
 const Solution = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <div className = "items-center"></div>
+    </>
   )
 }
 

@@ -1,6 +1,7 @@
 import Card from '../components/Card';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
+import Solution from '../components/Solution';
 
 
 const Landingpage = () => {
