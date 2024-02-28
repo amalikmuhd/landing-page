@@ -15,8 +15,14 @@ import Landing3 from './landing3.png';
 import Landing4 from './landing4.png';
 import CryptoImage from './crypto.png';
 import transactionImage from './transactionImage.png';
+import BookIcon from './book-icon.png';
+import MoneyIcon from './money-icon.png';
+import ThumbsIcon from './thumbs-icon.png';
 
 export {
+  BookIcon,
+  MoneyIcon,
+  ThumbsIcon,
   FullLogo,
   Bgimage,
   HeroImage,

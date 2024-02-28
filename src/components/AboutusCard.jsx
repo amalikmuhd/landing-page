@@ -1,8 +1,13 @@
 /* eslint-disable react/prop-types */
-const AboutusCard = ({ title, subtitle, icon }) => {
+const AboutusCard = ({ tag, title, subtitle, icon, iconWidth = 104 }) => {
   return (
-    <div className="flex flex-col items-center py-10 text-center w-4/12 rounded-lg border-bg-color border-2 px-10 shadow-2xl">
-      <img src={icon} alt="" width={104} className=" my-4" />
+    <div className="flex flex-col items-center py-10 text-center w-3/12 rounded-lg border-bg-color border-2 px-10 shadow-2xl">
+      <img src={icon} alt="" width={iconWidth} className=" my-4" />
+      {tag && (
+        <h1 className="font-light text-center mb-2 text-[20px] lg:text-[16px]">
+          {tag}
+        </h1>
+      )}
       <h1 className="font-light text-center mb-2 text-[30px] lg:text-[18px]">
         {title}
       </h1>
