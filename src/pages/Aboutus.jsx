@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   BookIcon,
   MoneyIcon,
@@ -10,6 +11,7 @@ import AccordionItem from '../components/AccordionItem';
 import BottonBanner from '../components/BottomBanner';
 
 const Aboutus = () => {
+  const [tab, setTab] = useState('General');
   return (
     <div className="font-space-grotesk font-Open-sans w-full">
       <div className="w-full  flex md:flex-row flex-col justify-center lg:px-[120px] px-[20px] bg-[#0D0C2B] text-[#fff]">
@@ -25,14 +27,18 @@ const Aboutus = () => {
         </div>
       </div>
 
-      <div className="flex container mx-auto text-center justify-center gap-10 mt-10">
+      <div className="flex container mx-auto text-center justify-center gap-10 my-20">
         <AboutusCard
+          onclick={() => setTab('General')}
+          styles={tab === 'General' ? 'shadow-2xl' : null}
           icon={BookIcon}
           iconWidth={40}
           title={'General'}
           subtitle={'All you need to know about Paycrest protocol.'}
         />
         <AboutusCard
+          onclick={() => setTab('Providers')}
+          styles={tab === 'Providers' ? 'shadow-2xl' : null}
           icon={MoneyIcon}
           iconWidth={40}
           title={'Providers'}
@@ -41,6 +47,8 @@ const Aboutus = () => {
           }
         />
         <AboutusCard
+          onclick={() => setTab('Senders')}
+          styles={tab === 'Senders' ? 'shadow-2xl' : null}
           icon={ThumbsIcon}
           iconWidth={40}
           title={'Senders'}
@@ -50,32 +58,91 @@ const Aboutus = () => {
         />
       </div>
 
-      <h2 className="font-bold text-center pt-[120px] md:pb-[50px] text-[30px] lg:text-[56px]">
-        General
-      </h2>
-      {/*  */}
+      {tab === 'General' ? (
+        <>
+          <h2 className="font-bold text-center pt-[20px] md:pb-[50px] text-[30px] lg:text-[56px]">
+            General
+          </h2>
 
-      <div className="container mx-auto text-center justify-center gap-10 mt-10">
-        <AccordionItem title="What is Paycrest?">
-          <p>
-            Paycrest is a decentralized peer-to-peer protocol that enables the
-            seamless exchange of cryptocurrencies for local currencies across
-            Ethereum and other EVM-based networks.
-          </p>
-        </AccordionItem>
-        <AccordionItem title="How can you use Paycrest?">
-          <p>Content for section 2 goes here.</p>
-        </AccordionItem>
-        <AccordionItem title="Does Paycrest work for customer or business?">
-          <p>Content for section 3 goes here.</p>
-        </AccordionItem>
-        <AccordionItem title="Does Paycrest power cross-border payments?">
-          <p>Content for section 4 goes here.</p>
-        </AccordionItem>
-        <AccordionItem title="What is Paycrest Direct Charge?">
-          <p>Content for section 5 goes here.</p>
-        </AccordionItem>
-      </div>
+          <div className="container mx-auto text-center justify-center gap-10 mb-10 w-7/12">
+            <AccordionItem title="What is Paycrest?">
+              <p>
+                Paycrest is a decentralized peer-to-peer protocol that enables
+                the seamless exchange of cryptocurrencies for local currencies
+                across Ethereum and other EVM-based networks.
+              </p>
+            </AccordionItem>
+            <AccordionItem title="How can you use Paycrest?">
+              <p>Content for section 2 goes here.</p>
+            </AccordionItem>
+            <AccordionItem title="Does Paycrest work for customer or business?">
+              <p>Content for section 3 goes here.</p>
+            </AccordionItem>
+            <AccordionItem title="Does Paycrest power cross-border payments?">
+              <p>Content for section 4 goes here.</p>
+            </AccordionItem>
+            <AccordionItem title="What is Paycrest Direct Charge?">
+              <p>Content for section 5 goes here.</p>
+            </AccordionItem>
+          </div>
+        </>
+      ) : tab === 'Providers' ? (
+        <>
+          <h2 className="font-bold text-center pt-[20px] md:pb-[50px] text-[30px] lg:text-[56px]">
+            Providers
+          </h2>
+
+          <div className="container mx-auto text-center justify-center gap-10 mb-10 w-7/12">
+            <AccordionItem title="Who is a Provider?">
+              <p>
+                Paycrest is a decentralized peer-to-peer protocol that enables
+                the seamless exchange of cryptocurrencies for local currencies
+                across Ethereum and other EVM-based networks.
+              </p>
+            </AccordionItem>
+            <AccordionItem title="How can you use Paycrest?">
+              <p>Content for section 2 goes here.</p>
+            </AccordionItem>
+            <AccordionItem title="Does Paycrest work for customer or business?">
+              <p>Content for section 3 goes here.</p>
+            </AccordionItem>
+            <AccordionItem title="Does Paycrest power cross-border payments?">
+              <p>Content for section 4 goes here.</p>
+            </AccordionItem>
+            <AccordionItem title="What is Paycrest Direct Charge?">
+              <p>Content for section 5 goes here.</p>
+            </AccordionItem>
+          </div>
+        </>
+      ) : tab === 'Senders' ? (
+        <>
+          <h2 className="font-bold text-center pt-[20px] md:pb-[50px] text-[30px] lg:text-[56px]">
+            Senders
+          </h2>
+
+          <div className="container mx-auto text-center justify-center gap-10 mb-10 w-7/12">
+            <AccordionItem title="Who is a Sender?">
+              <p>
+                Paycrest is a decentralized peer-to-peer protocol that enables
+                the seamless exchange of cryptocurrencies for local currencies
+                across Ethereum and other EVM-based networks.
+              </p>
+            </AccordionItem>
+            <AccordionItem title="How can you use Paycrest?">
+              <p>Content for section 2 goes here.</p>
+            </AccordionItem>
+            <AccordionItem title="Does Paycrest work for customer or business?">
+              <p>Content for section 3 goes here.</p>
+            </AccordionItem>
+            <AccordionItem title="Does Paycrest power cross-border payments?">
+              <p>Content for section 4 goes here.</p>
+            </AccordionItem>
+            <AccordionItem title="What is Paycrest Direct Charge?">
+              <p>Content for section 5 goes here.</p>
+            </AccordionItem>
+          </div>
+        </>
+      ) : null}
 
       {/*  */}
 
