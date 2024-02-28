@@ -60,7 +60,7 @@ const Aboutus = () => {
 
       {tab === 'General' ? (
         <>
-          <h2 className="font-bold text-center pt-[20px] md:pb-[50px] text-[30px] lg:text-[56px]">
+          <h2 className="font-bold text-center pt-[20px] md:pb-[50px] text-[30px] lg:text-[36px]">
             General
           </h2>
 
@@ -88,7 +88,7 @@ const Aboutus = () => {
         </>
       ) : tab === 'Providers' ? (
         <>
-          <h2 className="font-bold text-center pt-[20px] md:pb-[50px] text-[30px] lg:text-[56px]">
+          <h2 className="font-bold text-center pt-[20px] md:pb-[50px] text-[30px] lg:text-[36px]">
             Providers
           </h2>
 
@@ -116,7 +116,7 @@ const Aboutus = () => {
         </>
       ) : tab === 'Senders' ? (
         <>
-          <h2 className="font-bold text-center pt-[20px] md:pb-[50px] text-[30px] lg:text-[56px]">
+          <h2 className="font-bold text-center pt-[20px] md:pb-[50px] text-[30px] lg:text-[36px]">
             Senders
           </h2>
 
@@ -147,7 +147,7 @@ const Aboutus = () => {
       {/*  */}
 
       <div className=" flex flex-col container mx-auto text-center justify-center items-center">
-        <h2 className="font-bold text-center text-[30px] lg:text-[56px]">
+        <h2 className="font-bold text-center text-[30px] lg:text-[36px]">
           Still have a questions?
         </h2>
         <div className="w-5/12">
