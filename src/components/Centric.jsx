@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { IoCheckmarkCircleSharp } from "react-icons/io5";
 const Centric = ({ title, subtitle, button, image, style }) => {
   return (
     <>
@@ -12,22 +13,31 @@ const Centric = ({ title, subtitle, button, image, style }) => {
               </h1>
               <div className="flex align-left">
                 <p className="text-[18px] px-auto flex lg:w-[699px] lg:px-[120px] px-[20px]">
-                  {subtitle}{' '}
+                  {subtitle}{" "}
                 </p>
               </div>
               <div className="flex flex-col lg:px-[120px] px-[20px] lg:pt-[40px] pt-[20px] pb-[12px] ">
-                <div className="flex flex-row lg:pb-[12px]">
-                  <img src="./icon.svg" />
+                <div className="flex flex-row items-center lg:pb-[12px]">
+                  <IoCheckmarkCircleSharp
+                    className="bg-white rounded-full"
+                    color="green"
+                  />
                   <p className="lg:pl-[12px] pl-4">
                     Embedded widget or redirect options
                   </p>
                 </div>
-                <div className="flex flex-row lg:pb-[12px] ">
-                  <img src="./icon.svg" />
+                <div className="flex flex-row items-center lg:pb-[12px] ">
+                  <IoCheckmarkCircleSharp
+                    className="bg-white rounded-full"
+                    color="green"
+                  />
                   <p className="lg:pl-[12px] pl-4">Flexible APIs</p>
                 </div>
-                <div className="flex flex-row">
-                  <img src="./icon.svg" />
+                <div className="flex flex-row items-center">
+                  <IoCheckmarkCircleSharp
+                    className="bg-white rounded-full"
+                    color="green"
+                  />
                   <p className="lg:pl-[12px] pl-4">
                     Expansive configuration options
                   </p>
@@ -40,7 +50,7 @@ const Centric = ({ title, subtitle, button, image, style }) => {
               </div>
             </div>
             <div className="lg:pt-[64px] pt-[40px]">
-              <img src={image} style={{ width: '70%' }} />
+              <img src={image} className="w-[90%] lg:w-[70%] object-contain" />
             </div>
           </div>
         </div>

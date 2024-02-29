@@ -6,6 +6,7 @@ import check from './check-circle.png';
 import HomeBackground from './Home.webp';
 import BannerImage from './banner.webp';
 import BannerImage2 from './banner.jpg';
+import BannerImage3 from "./banner2.png"
 import LogoWhite from './logo-white.png';
 import PhoneAboutIcon from './phone-about-icon.png';
 import SupoortAboutIcon from './support-about-icon.png';
@@ -15,6 +16,10 @@ import Landing3 from './landing3.png';
 import Landing4 from './landing4.png';
 import CryptoImage from './crypto.png';
 import transactionImage from './transactionImage.png';
+import BrandLogos from "./brand-logos.svg"
+import MoneyTransfer from "./money-transfer 1.png"
+import DiscountPricetag from "./discount-pricetag-sale 1.png"
+import banner4 from "./CTA.png"
 
 export {
   FullLogo,
@@ -25,6 +30,7 @@ export {
   HomeBackground,
   BannerImage,
   BannerImage2,
+  BannerImage3,
   LogoWhite,
   PhoneAboutIcon,
   SupoortAboutIcon,
@@ -34,4 +40,8 @@ export {
   Landing4,
   CryptoImage,
   transactionImage,
+  BrandLogos,
+  MoneyTransfer,
+  DiscountPricetag,
+  banner4
 };
