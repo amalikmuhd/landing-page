@@ -20,8 +20,14 @@ import BrandLogos from "./brand-logos.svg"
 import MoneyTransfer from "./money-transfer 1.png"
 import DiscountPricetag from "./discount-pricetag-sale 1.png"
 import banner4 from "./CTA.png"
+import BookIcon from './book-icon.png';
+import MoneyIcon from './money-icon.png';
+import ThumbsIcon from './thumbs-icon.png';
 
 export {
+  BookIcon,
+  MoneyIcon,
+  ThumbsIcon,
   FullLogo,
   Bgimage,
   HeroImage,
