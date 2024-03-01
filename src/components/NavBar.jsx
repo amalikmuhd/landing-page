@@ -3,16 +3,12 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <header
-      className="font-space-grotesk h-[90px] lg:px-[120px] px-[20px] fixed w-full font-Open-sans border-b border-[#fff] border-opacity-5
-    flex items-center  bg-[#0D0C2B] flex-row z-10
-    "
-    >
+    <header className="font-space-grotesk h-[80px] lg:px-[120px] px-[20px] fixed w-full font-Open-sans border-b border-[#fff] border-opacity-5 flex items-center bg-[#0D0C2B] flex-row z-10">
       <div className="flex justify-center lg:block bg-blue-background ">
         <Link to={'/'}>
           <div className="flex justify-center lg:block">
             <svg
-              width="210"
+              width="160"
               height="44"
               viewBox="0 0 598 114"
               fill="none"
@@ -66,10 +62,10 @@ const NavBar = () => {
         <IoMenu size={24} color={'#fff'} />
       </div>
       <div className="lg:block hidden flex-row absolute right-[120px]">
-        <button className="bg-[#0D0C2B] rounded-[8px] px-[24px] py-[9px] border-white border text-white">
+        <button className="bg-[#0D0C2B] rounded-[6px] px-[20px] py-[6px] border-white border text-white">
           Login
         </button>
-        <button className="bg-[#1565D8] rounded-[8px] px-[24px] py-[10px] text-white border border-[#1565D8] ml-[16px]">
+        <button className="bg-[#1565D8] rounded-[6px] px-[20px] py-[8px] text-white border border-[#1565D8] ml-[16px]">
           Get started
         </button>
       </div>

@@ -1,22 +1,15 @@
 /* eslint-disable react/prop-types */
 
-const TextImageCard = ({
-  list,
-  flexReverse = false,
-  darkColor = false,
-  image,
-}) => {
+const TextImageCard = ({ list, darkColor = false, image }) => {
   return (
     <div
-      style={{ color: darkColor ? "white" : "black" }}
+      style={{ color: darkColor, marginTop: 80 }}
       className={
-        flexReverse
-          ? "w-[90%] flex flex-wrap mx-auto my-[2rem] justify-between items-center lg:p-[20px] flex-row-reverse"
-          : "w-[90%] flex flex-wrap mx-auto my-[2rem] justify-between items-center lg:p-[20px]"
+        'w-[90%] flex flex-wrap mx-auto my-[2rem] justify-between items-center lg:p-[20px]'
       }
     >
-      <div className="lg:w-[40%] lg:p-[20px]">
-        <h2 className="text-[18px] lg:text-[30px] font-bold tracking-[1px] leading-[1.2] lg:w-[80%] font-space-grotesk">
+      <div className="lg:w-[40%] lg:p-[10px]">
+        <h2 className="text-[18px] lg:text-[20px] font-bold tracking-[1px] leading-[1.2] lg:w-[80%] font-space-grotesk mb-10">
           Send Crypto, Receive Local Currency In Seconds
         </h2>
         {list?.map((item, index) => (
@@ -25,7 +18,7 @@ const TextImageCard = ({
               {index + 1}
             </span>
             <div>
-              <h3 className="text-[20px] font-medium mb-[0.4rem] font-space-grotesk">
+              <h3 className="text-[18px] font-medium mb-[0.4rem] font-space-grotesk">
                 {item.title}
               </h3>
               <p className="leading-[1.8] tracking-[0.4px] font-space-grotesk">
@@ -36,7 +29,7 @@ const TextImageCard = ({
         ))}
       </div>
       <div className=" lg:w-[45%]">
-        <img className="w-[90%] h-[500px] object-contain" src={image} alt="" />
+        <img className="w-[80%] h-[400px] object-contain" src={image} alt="" />
       </div>
     </div>
   );

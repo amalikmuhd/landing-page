@@ -10,7 +10,7 @@ import AboutusCard from '../components/AboutusCard';
 import AccordionItem from '../components/AccordionItem';
 import BottonBanner from '../components/BottomBanner';
 
-const Aboutus = () => {
+const Faqs = () => {
   const [tab, setTab] = useState('General');
   return (
     <div className="font-space-grotesk font-Open-sans w-full">
@@ -191,4 +191,4 @@ const Aboutus = () => {
   );
 };
 
-export default Aboutus;
+export default Faqs;

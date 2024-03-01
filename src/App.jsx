@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Landingpage from './pages/Landingpage';
-import Aboutus from './pages/Aboutus';
+import Faqs from './pages/Faqs';
 import Legal from './pages/Legal';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -21,7 +21,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Landingpage />} />
-        <Route exact path="aboutus" element={<Aboutus />} />
+        <Route exact path="faqs" element={<Faqs />} />
         <Route exact path="/legal" element={<Legal />} />
       </Routes>
       <Footer />

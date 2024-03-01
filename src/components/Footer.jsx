@@ -1,7 +1,7 @@
-import { FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
-import ListItems from "./ListItems";
-import FooterTopData from "../data/FooterTopData";
-import { LogoWhite } from "../assets/assets";
+import { FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa6';
+import ListItems from './ListItems';
+import FooterTopData from '../data/FooterTopData';
+import { LogoWhite } from '../assets/assets';
 
 const Footer = () => {
   return (
@@ -16,16 +16,16 @@ const Footer = () => {
         <div className="flex px-8 justify-between flex-wrap">
           {/* logo container */}
           <div className="w-full my-4 lg:w-[15%]">
-            <img src={LogoWhite} className={"w-[80%]"} alt="logo" />
+            <img src={LogoWhite} className={'w-[60%]'} alt="logo" />
             <div className="iconsContainer flex  mt-4">
-              <span className="bg-[#5a71845d] p-[13px] rounded-[20px] mr-[0.8rem]">
-                <FaTwitter fontSize={"16px"} />
+              <span className="bg-[#5a71845d] p-[10px] rounded-[20px] mr-[0.8rem]">
+                <FaTwitter fontSize={'16px'} />
               </span>
-              <span className="bg-[#5a71845d] p-[13px] rounded-[20px]  mr-[0.8rem]">
-                <FaInstagram fontSize={"16px"} />
+              <span className="bg-[#5a71845d] p-[10px] rounded-[20px]  mr-[0.8rem]">
+                <FaInstagram fontSize={'16px'} />
               </span>
-              <span className="bg-[#5a71845d] p-[13px] rounded-[20px] ">
-                <FaLinkedin fontSize={"16px"} />
+              <span className="bg-[#5a71845d] p-[10px] rounded-[20px] ">
+                <FaLinkedin fontSize={'16px'} />
               </span>
             </div>
           </div>

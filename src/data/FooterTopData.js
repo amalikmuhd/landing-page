@@ -3,7 +3,7 @@ const FooterTopData = [
     title: 'Company',
     listItems: [
       {
-        href: '#',
+        href: 'faqs',
         name: 'FAQs',
       },
       {
@@ -15,7 +15,7 @@ const FooterTopData = [
         name: 'Blog',
       },
       {
-        href: 'aboutus',
+        href: '#',
         name: 'About',
       },
     ],
