@@ -11,7 +11,7 @@ const AboutusCard = ({
   return (
     <div
       onClick={onclick}
-      className={`flex flex-col items-center py-10 text-center w-3/12 rounded-lg border-bg-color border-2 px-10 ${styles}`}
+      className={`cursor-pointer flex flex-col items-center py-10 text-center w-3/12 rounded-lg border-bg-color border-2 px-10 ${styles}`}
     >
       <img src={icon} alt="" width={iconWidth} className=" my-4" />
       {tag && (

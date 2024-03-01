@@ -30,6 +30,7 @@ export default {
       'header-primary': '#0D0C2B',
       'secondary-color': '#9BBFF0',
       'font-primary-color': '#202F3A',
+      'second-border-color': '#E5EAF4',
     },
     fontFamily: {
       'space-grotesk': ['Space Grotesk', 'sans-serif'],

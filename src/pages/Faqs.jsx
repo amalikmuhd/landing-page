@@ -27,7 +27,7 @@ const Faqs = () => {
         </div>
       </div>
 
-      <div className="flex container mx-auto text-center justify-center gap-10 my-20">
+      <div className="flex container mx-auto text-center justify-center gap-10 my-20 ">
         <AboutusCard
           onclick={() => setTab('General')}
           styles={tab === 'General' ? 'shadow-2xl' : null}
